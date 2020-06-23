@@ -6,12 +6,19 @@ from selenium.common.exceptions import NoSuchElementException
 
 class SeacrhLocators:
     # Локаторы основной страницы
+    LOCATOR_SEARCH_FIELD = (By.ID, "header")  #Хэдэр
     LOCATOR_SEARCH_FIELD = (By.ID, "search_query_top")  # Поисковая строка
     LOCATOR_SEARCH_BUTTON = (By.CLASS_NAME, "button-search")  # Кнопка Поиск
     LOCATOR_CART = (By.CLASS_NAME, "shopping_cart")  # Корзина
     LOCATOR_CONTACT = (By.ID, "contact-link")  # Контакты
     LOCATOR_NAVIGATION_BAR = (By.CLASS_NAME, "sf-with-ul")  # Блок навигации
     LOCATOR_MENU_LOGIN = (By.CLASS_NAME, "login")  # Вход в ЛК
+    LOCATOR_LOGO = (By.CLASS_NAME, "logo img-responsive")  # Логотип
+    LOCATOR_PHONE = (By.CLASS_NAME, "shop-phone")  #Телефон
+    LOCATOR_CONTACT = (By.ID, "homepage-slider")  #Слайдер
+    LOCATOR_PICTURE_TABS = (By.CLASS_NAME, "tab-content")  #Табы с картинками
+    LOCATOR_PICTURE_TABS = (By.CLASS_NAME, "clearfix")
+    LOCATOR_CONTACT = (By.ID, "footer")  #Футер
     # Локаторы формы входа в ЛК
     LOCATOR_USER_EMAIL = (By.ID, "email")  # Логин
     LOCATOR_USER_PASSWORD = (By.ID, "passwd")  # Пароль
